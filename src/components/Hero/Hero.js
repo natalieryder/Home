@@ -1,17 +1,70 @@
+// import React from 'react';
+// import { Jumbotron, Container } from 'reactstrap';
+// import hero from '../../b8.jpg';
+ import './Hero.css';
+import logo from '../../img/1111.png';
+// const Hero = (props) => {
+//   return (
+//     <div className="hero">
+//       <img src={hero} alt="hero" /> 
+//       <div className="hero-text">
+//       <h2 className="text-border">WE ARE WEB PROS</h2>
+//       <h3 className="text-bg">We Provide What You Desigre</h3>
+// </div>
+    
+  
+//     </div>
+//   );
+// };
+
+// export default Hero;
+
+
+
 import React from 'react';
-import { Jumbotron, Container } from 'reactstrap';
+import { Parallax, Background } from 'react-parallax';
 
-const Hero = (props) => {
-  return (
-    <div>
-      <Jumbotron fluid>
-        <Container fluid>
-          <h1 className="display-3">Fluid jumbotron</h1>
-          <p className="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
-        </Container>
-      </Jumbotron>
+const MyComponent = () => (
+  <div>
+    {/* <Parallax
+      blur={2}
+      bgImage={require('../../img/b1.jpg')}
+      bgImageAlt="back-1"
+      strength={100}
+      
+    >
+      Put some text content here
+      or even an empty div with fixed dimensions
+      to have a height for the parallax.
+      <div style={{ height: '700px' }} />
+    </Parallax> */}
+    <Parallax
+      blur={{ min: -2 , max: 3 }}
+      bgImage={require('../../img/bg10.jpg')}
+      bgImageAlt="back-2"
+      strength={250}
+      
+      
+    >
+    <div className="copywriting">
+    <div className="intro">
+      <img className="logo1" src={logo} alt="logi" /> 
+      <h2 className="we">WORLD WIDE WEB PROS</h2>
     </div>
-  );
-};
-
-export default Hero;
+    <div className="matn">
+      <p className="para1">You need coolest website with highest functionality</p>
+      <p className="para2">We Provide what you desigre</p>
+      <button className="btn btn-primary">Let's Take a Tour</button>
+      </div>
+      </div>
+      <div style={{ height: '580px' } } />
+    </Parallax>
+    <Parallax strength={350}>
+      {/* <div>Use the background component for custom elements</div> */}
+      {/* <Background className="custom-bg">
+        <img src="../../img/bg9.jpg" alt="fill murray" />
+      </Background> */}
+    </Parallax>
+  </div>
+);
+export default MyComponent;

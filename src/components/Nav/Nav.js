@@ -1,70 +1,30 @@
 
-// import React, { Component } from 'react';
+import { slide as Menu } from 'react-burger-menu';
+import React, { Component } from 'react';
 
-// class Nav extends Component {
-//     render() {
-//         return (
-//             <div>
-//                 <p>Nav</p>
-//             </div>
-//         );
-//     }
-// }
+class Nav extends Component {
 
-// export default Nav;
-
-import React from 'react';
-import {
-  Collapse,
-  Navbar,
-  NavbarToggler,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem } from 'reactstrap';
-
-export default class Example extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.toggle = this.toggle.bind(this);
-    this.state = {
-      isOpen: false
-    };
-  }
-  toggle() {
-    this.setState({
-      isOpen: !this.state.isOpen
-    });
+  showSettings(event) {
+    event.preventDefault();
   }
   render() {
     return (
-      <div>
-        <Navbar color="light" light expand="md">
-          <NavbarBrand href="/">PROTOTYPE</NavbarBrand>
-          <NavbarToggler onClick={this.toggle} />
-          <Collapse isOpen={this.state.isOpen} navbar>
-            <Nav className="ml-auto" navbar>
-              <NavItem>
-                <NavLink href="#">Services</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="#">Strategy</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="#">Porfolio</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="#">Contact Us</NavLink>
-              </NavItem>
-            </Nav>
-          </Collapse>
-        </Navbar>
+      <div id="outer-container">
+        <Menu pageWrapId={"page-wrap"} outerContainerId={"outer-container"} />
+        <main id="page-wrap">
+          <Menu pageWrapId={"page-wrap"} />
+
+          <Menu>
+            <a id="home" className="menu-item" href="/">Home</a>
+            <a id="about" className="menu-item" href="/about">About</a>
+            <a id="contact" className="menu-item" href="/contact">Contact</a>
+            <a onClick={this.showSettings} className="menu-item--small" href="">Settings</a>
+          </Menu>
+
+        </main>
       </div>
     );
   }
 }
+
+export default Nav;

@@ -13,7 +13,7 @@ import Footer from './components/Footer/Footer';
 import Hero from './components/Hero/Hero';
 import Nav from './components/Nav/Nav';
 import Portfolio from './components/Portfolio/Portfolio';
-import Section from './components/Section/Section';
+// import Section from './components/Section/Section';
 import Service from './components/Service/Service';
 import Strategy from './components/Strategy/Strategy';
 
@@ -32,9 +32,9 @@ class App extends Component {
        <Router>
          <Route exact path="/" component={Hero} /> 
        </Router>
-       <Router>
+       {/* <Router>
          <Route exact path="/" component={Section} /> 
-       </Router>
+       </Router> */}
        <Router>
          <Route exact path="/" component={Service} /> 
        </Router>

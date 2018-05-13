@@ -1,11 +1,14 @@
 
 import React, { Component } from 'react';
+import './Portfolio.css';
 
 class Portfolio extends Component {
     render() {
         return (
-            <div>
-                <p>Portfolio</p>
+            <div className="portfolio">
+                 <div className="grid-item">
+                    <h3 className="text-head">Portfolio</h3>
+                </div>
             </div>
         );
     }

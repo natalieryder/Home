@@ -6,6 +6,8 @@ import axios from 'axios';
 import './Contact.css';
 
 class Contact extends Component {
+
+  
   state = {
     name: '',
     company: '',
@@ -45,9 +47,12 @@ class Contact extends Component {
 
 render() {
     return (
+      <div className="contact">
       <div className="contact-body">
         
-
+        <div className="grid-item">
+                    <h3 className="text-head">Contact</h3>
+                </div>
 
         <div className="container">
         <div className="wrapper animated bounceInLeft mb-4">
@@ -91,7 +96,9 @@ render() {
         </div>
     
       </div>
-      </div>// end contact body
+      </div>
+       
+      </div>
     )
   }
 }

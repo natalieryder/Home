@@ -42,7 +42,7 @@ const MyComponent = () => (
       blur={{ min: -2 , max: 3 }}
       bgImage={require('../../img/bg10.jpg')}
       bgImageAlt="back-2"
-      strength={250}
+      strength={100}
       
       
     >
@@ -57,7 +57,7 @@ const MyComponent = () => (
       <button className="btn btn-primary">Let's Take a Tour</button>
       </div>
       </div>
-      <div style={{ height: '580px' } } />
+      <div style={{ height: '280px' } } />
     </Parallax>
     <Parallax strength={350}>
       {/* <div>Use the background component for custom elements</div> */}

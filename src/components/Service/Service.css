@@ -1,69 +1,89 @@
 .service{
     overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.068);
 }
 .text-head{
     padding:30px;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    color: #0A337F ;
+    
     font-size: 4rem;
 
+    background-color: #0A337F ; 
+    color: snow;
+    
 }
 .text-head:hover{
-background-color: #0A337F ; 
-color: snow;
+background-color: rgb(255, 255, 255) ; 
+color: #0A337F ;
 transition-delay: 10ms;
 transition-duration: 1s;
 
 }
-
-
+.wrap{
+    display: flex;
+    height: 400px; 
+    justify-content: space-around;
+    margin-top: 50px;
+}
+.a{
+    position: relative;
+    /* background-color: gainsboro; */
+    text-align: center;
+    padding: 20px;
+}
 .aa{
     position: relative;
-    top: 20px;
-    left: 150px;
-    background-color: #091534;
-    padding: 50px;
-    color: white;
-    overflow: hidden;
+    /* background-color: bisque; */
+    text-align: center;
+    padding: 20px;
+    border-right: 1px solid rgba(128, 128, 128, 0.61);
     
-
+    
+    
 }
 
 .aaa{
-    
     position: relative;
-    top: -120px;
-    left: 600px;
-    background-color: rgb(177, 11, 11);
-    color: white;
-    padding: 50px;
-    overflow: hidden;
+    /* background-color: gainsboro; */
+    text-align: center;
+    padding: 20px;
+    border-right: 1px solid rgba(128, 128, 128, 0.61);
+    
 }
-
+.aaaa{
+    position: relative;
+    /* background-color: bisque; */
+    text-align: center;   
+    padding: 20px;
+    border-right: 1px solid rgba(128, 128, 128, 0.61);
+    
+     
+}
 .pic1{
-    max-width: 15%;
-    padding: 30px;
+ height: 150px;
+ width: 150px;
+ margin-top: 2rem;
 }
 
 .pic2{
-    
-    max-width: 25%;
-    
-
+    height: 165px;
+    width: 165px;
+    margin-top: 2rem;
 }
+.pic3{
+    height: 180px;
+    width: 180px;
+    margin-top: 2rem;
+    
+   }
+   .pic4{
+    height: 150px;
+    width: 230px;
+    margin-top: 2rem;    
+   }
 .p1{
     font-family: Arial, Helvetica, sans-serif;
-    color: #D4E4F7;
-    border-bottom: 1px solid grey ;
-    padding-bottom: 10px;
-    margin-bottom: 10px;
-    
-}
-.p2{    font-family: Arial, Helvetica, sans-serif;
-    border-bottom: 1px solid grey ;
-    padding-bottom: 10px;
-    margin-bottom: 10px;
-    border-bottom: 1px solid navy;
-    color: rgb(16, 3, 46);
+    font-size: 1.5rem;
+    color: rgb(114, 108, 108);
 }

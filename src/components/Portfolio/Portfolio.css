@@ -1,23 +1,118 @@
-.portfolio{
-    margin-top: 2rem;
-    height: 560px;
-}
-.text-head{
-    padding:30px;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    
-    font-size: 4rem;
+    .portfolio{
+        margin-top: 2rem;
+        height: 1000px;
+        overflow: hidden;
+        width: 100%;
+    }
+    .text-head{
+        padding:30px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        
+        font-size: 4rem;
 
-    background-color: #0A337F ; 
-    color: snow;
-    
-}
-.text-head:hover{
-background-color: rgb(255, 255, 255) ; 
-color: #0A337F ;
-transition: linear;
-transition-delay: 10ms;
-transition-duration: 1s;
-cursor: pointer;
-}
+        background-color: #0A337F ; 
+        color: snow;
+        
+    }
+    .text-head:hover{
+    background-color: rgb(255, 255, 255) ; 
+    color: #0A337F ;
+    transition: linear;
+    transition-delay: 10ms;
+    transition-duration: 1s;
+    cursor: pointer;
+    }
+
+    .feutured{
+        text-align: center;
+    }
+    .mockup{
+        display: flex;
+        justify-content: space-around;
+        
+        background-color: bisque;
+        position: relative;
+        height: 600px;
+        margin: 90px 90px 30px 90px;
+        border: 1px solid black ;
+        padding: 40px;
+
+    }
+    .mock1{
+        z-index: 1;
+        height: 200px;
+        width: 300px;
+        position: relative;
+        background-position: center;
+        box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.404);    
+        left: 80px;
+        background-color: aqua;
+        box-shadow: whitesmoke;
+        margin: 20px;
+    }
+    .mock2{
+        z-index: 1;
+        height: 200px;
+        width: 300px;
+        position: relative;
+        background-position: center;
+        box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.404);    
+        left: 80px;
+        background-color: aqua;
+        box-shadow: whitesmoke;
+        margin: 20px;
+        
+    }
+    .mock3{
+        z-index: 1;
+        height: 200px;
+        width: 300px;
+        position: relative;
+        background-position: center;
+        box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.404);    
+        left: 80px;
+        background-color: aqua;
+        box-shadow: whitesmoke;
+        margin: 20px;
+        
+    }
+    .mock4{
+        z-index: 1;
+        height: 200px;
+        width: 300px;
+        position: relative;
+        background-position: center;
+        box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.404);    
+        left: 80px;
+        background-color: aqua;
+        box-shadow: whitesmoke;
+        margin: 20px;
+        
+    }
+    .mock5{
+        z-index: 1;
+        height: 200px;
+        width: 300px;
+        position: relative;
+        background-position: center;
+        box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.404);    
+        left: 80px;
+        background-color: aqua;
+        box-shadow: whitesmoke;
+        margin: 20px;
+        
+    }
+    .mock6{
+        z-index: 1;
+        height: 200px;
+        width: 300px;
+        position: relative;
+        background-position: center;
+        box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.404);    
+        left: 80px;
+        background-color: aqua;
+        box-shadow: whitesmoke;
+        margin: 20px;
+        
+    }

@@ -1,7 +1,9 @@
 ::-webkit-scrollbar { 
     display: none; 
 }
-
+.abc{
+    max-height: 100%;
+}
 .intro{
 
 position: relative;
@@ -51,4 +53,7 @@ color: antiquewhite;
     color: antiquewhite;
     padding: 5px;
     }
-    
+    .secondimage{
+        height: 100px;
+        
+        }

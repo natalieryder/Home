@@ -25,7 +25,7 @@ import React from 'react';
 import { Parallax, Background } from 'react-parallax';
 
 const MyComponent = () => (
-  <div>
+  <div className="abc">
     {/* <Parallax
       blur={2}
       bgImage={require('../../img/b1.jpg')}
@@ -42,7 +42,7 @@ const MyComponent = () => (
       blur={{ min: -2 , max: 3 }}
       bgImage={require('../../img/bg10.jpg')}
       bgImageAlt="back-2"
-      strength={100}
+      strength={200}
       
       
     >
@@ -57,14 +57,19 @@ const MyComponent = () => (
       <button className="btn btn-primary">Let's Take a Tour</button>
       </div>
       </div>
-      <div style={{ height: '280px' } } />
+      <div style={{ height: '240px' }} />
     </Parallax>
-    <Parallax strength={350}>
-      {/* <div>Use the background component for custom elements</div> */}
-      {/* <Background className="custom-bg">
-        <img src="../../img/bg9.jpg" alt="fill murray" />
-      </Background> */}
-    </Parallax>
+    {/* <Parallax 
+      // blur={{ min: -1 , max: 1 }}
+      bgImage={require('../../img/bg4.jpg')}
+      bgImageAlt="back-2"
+      strength={400}
+    >
+      <div classname="secondimage">
+        
+      </div>
+      <div style={{ height: '400px' } } />
+    </Parallax> */}
   </div>
 );
 export default MyComponent;

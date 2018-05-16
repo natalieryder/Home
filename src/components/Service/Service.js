@@ -4,6 +4,7 @@ import pic1 from './html.png' ;
 import pic2 from './world.png' ;
 import pic3 from './ter.png' ;
 import pic4 from './seo.png' ;
+import { Parallax, Background } from 'react-parallax';
 
 
 
@@ -14,7 +15,7 @@ class Service extends Component {
     render() {
         return (
             <div className="service">
-                    <div className=".grid-container">
+                    <div className="contentbox">
                 <div className="grid-item">
                     <h3 className="text-head">Services</h3>
                 </div>
@@ -36,8 +37,17 @@ class Service extends Component {
                     <img className="pic4" src={pic4} alt="Seo" />
                 </div>
                 </div>
-                
+                <br />
                      </div>
+                     <Parallax 
+      // blur={{ min: -1 , max: 1 }}
+      bgImage={require('../../img/bg4.jpg')}
+      bgImageAlt="back-2"
+      strength={400}
+    >
+      
+      <div style={{ height: '400px'  } } />
+    </Parallax>
             </div>
         );
     }

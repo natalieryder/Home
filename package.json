@@ -1,26 +1,43 @@
 {
   "name": "home",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.1.0",
+  "description": "server-side",
+  "main": "server.js",
+
   "dependencies": {
-    "axios": "^0.18.0",
-    "bootstrap": "^4.1.1",
+    "body-parser": "^1.18.2",
+    "bootstrap": "^4.1.0",
+    "connect-mongo": "^2.0.1",
+    "cheerio": "^1.0.0-rc.2",
+    "nodemailer": "^4.6.4",
+    "mongoose": "^4.12.1",
+    "express-session": "^1.15.6",
+    "express": "^4.15.4",
     "react": "^16.3.2",
-    "react-burger-menu": "^2.4.4",
-    "react-custom-scrollbars": "^4.2.1",
-    "react-dom": "^16.3.2",
-    "react-parallax": "^1.7.0",
-    "react-router-dom": "^4.2.2",
-    "react-scripts": "1.1.4",
-    "react-typist": "^2.0.4",
-    "reactstrap": "^6.0.1",
-    "rmwc": "^1.6.0",
-    "sanitize-html": "^1.18.2"
+    "react-dom": "^16.3.2"
+
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.0",
+    "nodemon": "^1.11.0"
+    
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
-  }
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "node server.js",
+    "client": "node scripts/start-client.js",
+    "start": "concurrently \"nodemon server.js\" \"npm run client\"",
+    "build": "node scripts/build.js",
+    "installDeps": "yarn && cd client && yarn"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AmirNasehi/Home.git"
+  },
+  "author": "Amir Nasehi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AmirNasehi/Home/issues"
+  },
+  "homepage": "https://github.com/AmirNasehi/Home#readme"
 }

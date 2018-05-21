@@ -1,26 +1,4 @@
-// import React from 'react';
-// import { Jumbotron, Container } from 'reactstrap';
-// import hero from '../../b8.jpg';
- import './Hero.css';
-import logo from '../../img/1111.png';
-// const Hero = (props) => {
-//   return (
-//     <div className="hero">
-//       <img src={hero} alt="hero" /> 
-//       <div className="hero-text">
-//       <h2 className="text-border">WE ARE WEB PROS</h2>
-//       <h3 className="text-bg">We Provide What You Desigre</h3>
-// </div>
-    
-  
-//     </div>
-//   );
-// };
-
-// export default Hero;
-
-
-
+import './Hero.css';
 import React from 'react';
 import { Parallax, Background } from 'react-parallax';
 
@@ -42,12 +20,11 @@ const MyComponent = () => (
     </Parallax> */}
     <Parallax
       blur={{ min: -1 , max: 3 }}
-      bgImage={require('../../img/back3.jpg')}
-      bgOpacity={0.8}
+      bgImage={require('../../img/back3.jpg') }
       bgImageAlt="back-2"
-      strength={200}
-      
-      
+      strength={150}
+      bgClassName="blurimage"
+       
     >
     <div className="copywriting">
     <div className="intro">

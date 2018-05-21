@@ -47,7 +47,7 @@ class Contact extends Component {
 
 render() {
     return (
-      <div className="contact" id="contactus">
+      <div className="co" id="contactus">
       <div className="contact-body">
         
         <div className="grid-item">

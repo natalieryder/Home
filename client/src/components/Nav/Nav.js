@@ -12,6 +12,7 @@ class Nav extends Component {
   render() {
     return (
     <div className="menu">
+    
           <Menu>
             <a id="home" className="menu-item" href="#hero">Home</a>
             <a id="about" className="menu-item" href="#service">Services</a>

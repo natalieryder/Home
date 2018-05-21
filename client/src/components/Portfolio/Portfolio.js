@@ -17,7 +17,7 @@ class Portfolio extends Component {
                 startDelay={1000}
               
                 > 
-                <h1 className="f1">FEATURED PROJECTS</h1>
+                <h1 className="feu1">FEATURED PROJECTS</h1>
                 <Typist.Delay ms={500} />
 
                 <p className="unlike">Unlike other web design companies, not one of our client’s websites look the same,

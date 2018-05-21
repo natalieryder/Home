@@ -14,7 +14,7 @@ import './Service.css' ;
 class Service extends Component {
     render() {
         return (
-            <div className="service">
+            <div className="service" id="service">
                     <div className="contentbox">
                 <div className="grid-item">
                     <h3 className="text-head">Services</h3>

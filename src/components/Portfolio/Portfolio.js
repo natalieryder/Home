@@ -6,7 +6,7 @@ import './Portfolio.css';
 class Portfolio extends Component {
     render() {
         return (
-            <div className="portfolio">
+            <div className="portfolio" id="portfolio">
                  <div className="grid-item">
                     <h3 className="text-head">Portfolio</h3>
                 </div>
@@ -17,21 +17,22 @@ class Portfolio extends Component {
                 startDelay={1000}
               
                 > 
-                <h1>FEATURED PROJECTS<span className="typed-cursor"></span></h1>
+                <h1 className="f1">FEATURED PROJECTS</h1>
                 <Typist.Delay ms={500} />
 
-                <p>Unlike other web design companies, not one of our client’s websites look the same,
-                        they are all designed in their own unique and creative way.</p>
+                <p className="unlike">Unlike other web design companies, not one of our client’s websites look the same,
+                       <br /> they are all designed in their own unique and creative way.</p>
                 </Typist>
-               </div>
-              <div className="mockup">
-              <div className="mock1"></div>
-              <div className="mock2"></div>
-              <div className="mock3"></div>
-              <div className="mock4"></div>
-              <div className="mock5"></div>
-              <div className="mock6"></div>
-              </div>
+                <h1 className="dot">. . . </h1>
+               </div>  
+            <div className="mockup">
+            <div className="mc1"></div>
+            <div className="mc2"></div>
+            <div className="mc3"></div>
+            <div className="mc4"></div>
+            <div className="mc5"></div>
+            <div className="mc6"></div>
+            </div>
      
             </div>
         );

@@ -3,6 +3,8 @@
         height: 1000px;
         overflow: hidden;
         width: 100%;
+        /* background-color: #e2ecff; */
+/* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%230045f7' fill-opacity='0.18' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E"); */
     }
     .text-head{
         padding:30px;
@@ -24,95 +26,127 @@
     cursor: pointer;
     }
 
-    .feutured{
+.f1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 70px;
+    text-align: center;
+}
+.dot{
+    text-align: center;
+    font-size: 3em;
+}
+    .unlike{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 20px;
+        font-weight: 500;
         text-align: center;
+        margin-bottom: 0px;
+        
     }
     .mockup{
-        display: flex;
-        justify-content: space-around;
         
-        background-color: bisque;
-        position: relative;
-        height: 600px;
-        margin: 90px 90px 30px 90px;
-        border: 1px solid black ;
-        padding: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 22px;
+        margin: 3px;
+    }
+    .mc1{
+        z-index: 1;
+        background-image: url(../../img/mock1.jpg);
+    background-size: 350px 200px;
+    opacity: 0.7;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.205);    
+
+
+        background-color: rgba(170, 167, 164, 0.295);
+        width: 330px;
+        height: 200px;
+        margin: 30px;
+        cursor: pointer;
+    }
+    .mc1:hover{
+        opacity: 0.97;
+        transition-delay: 1s;
+        transition-duration: 0.8s;
+        transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
+        
 
     }
-    .mock1{
+   
+    .mc2{
         z-index: 1;
+        background-image: url(../../img/mock1.jpg);
+    background-size: 330px 200px;
+    opacity: 0.7;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.205);    
+
+
+        background-color: rgba(170, 167, 164, 0.295);
+        width: 330px;
         height: 200px;
-        width: 300px;
-        position: relative;
-        background-position: center;
-        box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.404);    
-        left: 80px;
-        background-color: aqua;
-        box-shadow: whitesmoke;
-        margin: 20px;
+        margin: 30px;
     }
-    .mock2{
+    .mc3{
         z-index: 1;
+        background-image: url(../../img/mock1.jpg);
+    background-size: 350px 200px;
+    opacity: 0.7;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.205);    
+
+
+        background-color: rgba(170, 167, 164, 0.295);
+        width: 330px;
         height: 200px;
-        width: 300px;
-        position: relative;
-        background-position: center;
-        box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.404);    
-        left: 80px;
-        background-color: aqua;
-        box-shadow: whitesmoke;
-        margin: 20px;
-        
+        margin: 30px;
     }
-    .mock3{
+    .mc4{
         z-index: 1;
+        background-image: url(../../img/mock1.jpg);
+    background-size: 350px 200px;
+    opacity: 0.7;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.205);    
+
+
+        background-color: rgba(170, 167, 164, 0.295);
+        width: 330px;
         height: 200px;
-        width: 300px;
-        position: relative;
-        background-position: center;
-        box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.404);    
-        left: 80px;
-        background-color: aqua;
-        box-shadow: whitesmoke;
-        margin: 20px;
-        
+        margin: 30px;
     }
-    .mock4{
+    .mc5{
         z-index: 1;
+        background-image: url(../../img/mock1.jpg);
+    background-size: 350px 200px;
+    opacity: 0.7;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.205);    
+
+
+        background-color: rgb(12, 8, 3);
+        width: 330px;
         height: 200px;
-        width: 300px;
-        position: relative;
-        background-position: center;
-        box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.404);    
-        left: 80px;
-        background-color: aqua;
-        box-shadow: whitesmoke;
-        margin: 20px;
-        
+        margin: 30px;
     }
-    .mock5{
+    .mc6{
         z-index: 1;
+        background-image: url(../../img/mock1.jpg);
+    background-size: 350px 200px;
+    opacity: 0.7;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.205);    
+
+
+        background-color: rgba(170, 167, 164, 0.295);
+        width: 330px;
         height: 200px;
-        width: 300px;
-        position: relative;
-        background-position: center;
-        box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.404);    
-        left: 80px;
-        background-color: aqua;
-        box-shadow: whitesmoke;
-        margin: 20px;
-        
-    }
-    .mock6{
-        z-index: 1;
-        height: 200px;
-        width: 300px;
-        position: relative;
-        background-position: center;
-        box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.404);    
-        left: 80px;
-        background-color: aqua;
-        box-shadow: whitesmoke;
-        margin: 20px;
-        
+        margin: 30px;
     }

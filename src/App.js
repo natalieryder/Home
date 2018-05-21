@@ -5,6 +5,9 @@ import {
 } from 'react-router-dom';
 import { Button } from 'reactstrap';
 
+import { pushRotate as Menu } from 'react-burger-menu';
+import './App.css';
+
 
 
 // Pages used in routes
@@ -22,9 +25,15 @@ import Strategy from './components/Strategy/Strategy';
 
 
 
+
+
 class App extends Component {
+
+
   render() {
     return (
+     
+
       <div>
        <Router>
          <Route exact path="/" component={Nav} /> 
@@ -50,7 +59,10 @@ class App extends Component {
        <Router>
          <Route exact path="/" component={Footer} /> 
        </Router>
+
+       
       </div>
+     
     );
   }
 }

@@ -24,8 +24,10 @@ import logo from '../../img/1111.png';
 import React from 'react';
 import { Parallax, Background } from 'react-parallax';
 
+
 const MyComponent = () => (
-  <div className="abc">
+  <div className="abc" id="hero">
+  
     {/* <Parallax
       blur={2}
       bgImage={require('../../img/b1.jpg')}
@@ -39,8 +41,9 @@ const MyComponent = () => (
       <div style={{ height: '700px' }} />
     </Parallax> */}
     <Parallax
-      blur={{ min: -2 , max: 3 }}
-      bgImage={require('../../img/bg10.jpg')}
+      blur={{ min: -1 , max: 3 }}
+      bgImage={require('../../img/back3.jpg')}
+      bgOpacity={0.8}
       bgImageAlt="back-2"
       strength={200}
       
@@ -48,16 +51,19 @@ const MyComponent = () => (
     >
     <div className="copywriting">
     <div className="intro">
-      <img className="logo1" src={logo} alt="logi" /> 
+      {/* <img className="logo1" src={logo} alt="logi" />  */}
+      <h3 className="agency">WEB DESIGN AGENCY</h3>
+      <hr className="hr1" />
       <h2 className="we">WORLD WIDE WEB PROS</h2>
     </div>
     <div className="matn">
-      <p className="para1">You need coolest website with highest functionality</p>
-      <p className="para2">We Provide what you desigre</p>
+      <p className="para1">You need coolest website with highest functionality
+      <br />
+      We Provide what you desigre</p>
       <button className="btn btn-primary">Let's Take a Tour</button>
       </div>
       </div>
-      <div style={{ height: '240px' }} />
+      <div style={{ height: '270px' }} />
     </Parallax>
     {/* <Parallax 
       // blur={{ min: -1 , max: 1 }}
@@ -70,6 +76,7 @@ const MyComponent = () => (
       </div>
       <div style={{ height: '400px' } } />
     </Parallax> */}
+    
   </div>
 );
 export default MyComponent;

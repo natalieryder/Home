@@ -6,7 +6,7 @@ import './Strategy.css';
 class Strategy extends Component {
     render() {
         return (
-                    <div className="highdiv">
+                    <div className="highdiv" id="strategy">
             <div className="strategy">
                  <div className="grid-item">
                     <h3 className="text-head">Strategy</h3>

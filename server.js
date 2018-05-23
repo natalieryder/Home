@@ -18,6 +18,14 @@ require('./libs/db-connection');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
+
+// global var
+app.use((req, res, next) => {
+    res.locals.user = req.user || null;
+    res.locals.errors = [];
+    next();
+})
+
 app.use(express.static(path.join(__dirname,'/public')));
 app.use(require('./routes/')); // main routes
 

@@ -29,9 +29,9 @@ app.use((req, res, next) => {
 app.use(express.static(path.join(__dirname,'/public')));
 app.use(require('./routes/')); // main routes
 
-if (process.env.NODE_ENV === 'production') {
+// if (process.env.NODE_ENV === 'production') {
     app.use(express.static('client/build'));
-  }
+//   }
 
   server.listen(PORT, function () {
     console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`);

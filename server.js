@@ -8,7 +8,7 @@ const server = require('http').createServer(app);
 const bodyParser = require("body-parser");
 const path = require('path');
 
-const PORT = process.env.PORT || port;
+const PORT = process.env.PORT || 3000;
 
 const {MONGODB_URI} = require('./config/');
 require('./libs/db-connection');
@@ -26,12 +26,19 @@ app.use((req, res, next) => {
     next();
 })
 
-app.use(express.static(path.join(__dirname,'/public')));
+// app.use(express.static(path.join(__dirname,'/public')));
 app.use(require('./routes/')); // main routes
 
 // if (process.env.NODE_ENV === 'production') {
-    app.use(express.static('client/build'));
+    app.use(express.static(path.join(__dirname, 'client/build')));
+    // app.use(express.static('client/build'));
 //   }
+
+// The "catchall" handler: for any request that doesn't
+// match one above, send back React's index.html file.
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname+'/client/build/index.html'));
+  });
 
   server.listen(PORT, function () {
     console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`);

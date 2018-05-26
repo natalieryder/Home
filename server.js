@@ -18,27 +18,32 @@ require('./libs/db-connection');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
+app.use(express.static(path.join(__dirname, 'build')));
+
+app.get('/', function (req, res) {
+  res.sendFile(path.join(__dirname, 'build', 'index.html'));
+});
 
 // global var
-app.use((req, res, next) => {
-    res.locals.user = req.user || null;
-    res.locals.errors = [];
-    next();
-})
+// app.use((req, res, next) => {
+//     res.locals.user = req.user || null;
+//     res.locals.errors = [];
+//     next();
+// })
 
 // app.use(express.static(path.join(__dirname,'/public')));
-app.use(require('./routes/')); // main routes
+// app.use(require('./routes/')); // main routes
 
 // if (process.env.NODE_ENV === 'production') {
-    app.use(express.static(path.join(__dirname, 'client/build')));
-    // app.use(express.static('client/build'));
+    // app.use(express.static(path.join(__dirname, 'client/build')));
+//     app.use(express.static('client/build'));
 //   }
 
 // The "catchall" handler: for any request that doesn't
 // match one above, send back React's index.html file.
-app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname+'/client/build/index.html'));
-  });
+// app.get('*', (req, res) => {
+//     res.sendFile(path.join(__dirname+'/client/build/index.html'));
+//   });
 
   server.listen(PORT, function () {
     console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`);

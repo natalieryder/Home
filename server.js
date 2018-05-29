@@ -18,19 +18,13 @@ require('./libs/db-connection');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-app.use(express.static(path.join(__dirname, 'build')));
-
-app.get('/', function (req, res) {
-  res.render('build/index.html')
-});
-
 
 // global var
-// app.use((req, res, next) => {
-//     res.locals.user = req.user || null;
-//     res.locals.errors = [];
-//     next();
-// })
+app.use((req, res, next) => {
+    res.locals.user = req.user || null;
+    res.locals.errors = [];
+    next();
+})
 
 // app.use(express.static(path.join(__dirname,'/public')));
 // app.use(require('./routes/')); // main routes
@@ -49,6 +43,3 @@ app.get('/', function (req, res) {
   server.listen(PORT, function () {
     console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`);
 });
-
-
-// "start": "concurrently \"nodemon server.js\" \"npm run client\"",

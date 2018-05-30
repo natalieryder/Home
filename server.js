@@ -8,7 +8,7 @@ const server = require('http').createServer(app);
 const bodyParser = require("body-parser");
 const path = require('path');
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 
 const {MONGODB_URI} = require('./config/');
 require('./libs/db-connection');

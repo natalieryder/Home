@@ -1,10 +1,10 @@
 const express = require("express");
 const app = express();
+const server = require('http').createServer(app);
 const session = require('express-session');
 const mongoose = require("mongoose");
 const MongoStore = require('connect-mongo')(session);
-const server = require('http').createServer(app);
-
+const passport = require('passport');
 const bodyParser = require("body-parser");
 const path = require('path');
 
@@ -39,6 +39,7 @@ app.use((req, res, next) => {
 // app.get('*', (req, res) => {
 //     res.sendFile(path.join(__dirname+'/client/build/index.html'));
 //   });
+app.use(express.static("client/build"));
 
   server.listen(PORT, function () {
     console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`);

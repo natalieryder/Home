@@ -4,7 +4,7 @@ const server = require('http').createServer(app);
 const session = require('express-session');
 const mongoose = require("mongoose");
 const MongoStore = require('connect-mongo')(session);
-const passport = require('passport');
+// const passport = require('passport');
 const bodyParser = require("body-parser");
 const path = require('path');
 

@@ -4,7 +4,6 @@ const server = require('http').createServer(app);
 const session = require('express-session');
 const mongoose = require("mongoose");
 const MongoStore = require('connect-mongo')(session);
-// const passport = require('passport');
 const bodyParser = require("body-parser");
 const path = require('path');
 
@@ -39,6 +38,9 @@ app.use((req, res, next) => {
 // app.get('*', (req, res) => {
 //     res.sendFile(path.join(__dirname+'/client/build/index.html'));
 //   });
+
+// Serve up static assets
+//we need to use the next line to push the app in heroku
 app.use(express.static("client/build"));
 
   server.listen(PORT, function () {
